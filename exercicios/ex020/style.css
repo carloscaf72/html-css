@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    display: inline-block;
+    background-color: lightgray;
+    text-align: center;
+    height: 110px;
+    width: 110px;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.q1:hover {
+    background-color: #0ACDD2;
+}
+
+.q2:hover {
+    background-color: #09B2B8;
+}
+
+.q3:hover {
+    background-color: #078085;
+}
+
+.q4:hover {
+    background-color: #246466;
+}
+
+.q5:hover {
+    background-color: #033638;
+}

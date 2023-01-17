@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h2 {
+    text-indent: 2rem;
+}
+
+h3,
+.ident {
+    text-indent: 4rem;
+}
+
+h4 {
+    text-indent: 6rem;
+}

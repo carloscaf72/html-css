@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>ex020 - pseudo-elementos</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sua descrição">
+    <meta name="author" content="noctuaCode">
+    <meta name="keywords" content="palavras chaves">
+    <link rel="shortcut icon" href="../../img/noctua7-square-64.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(255, 140, 140)
+        }
+
+        .especial::before {
+            content: '✟ ';
+            font-weight: normal;
+            color: blue;
+        }
+
+        .especial::after {
+            content: ' ✟';
+            font-weight: normal;
+            color: blue;
+        }
+
+        /*
+        SELETORES PERSONALIZADOS
+        #   = id
+        .   = Class
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = children 
+
+        */
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="noctua">
+            <img src="../../img/noctua7-square-64.png" alt="icon-noctua7">
+        </div>
+        <h1>Pseudo-elementos</h1>
+    </div>
+
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>ex021 - caixa02</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sua descrição">
+    <meta name="author" content="noctuaCode">
+    <meta name="keywords" content="palavras chaves">
+    <link rel="shortcut icon" href="../../img/noctua7-square-64.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        body {
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article>aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer>p {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="noctua">
+            <img src="../../img/noctua7-square-64.png" alt="icon-noctua7">
+        </div>
+        <h1>Grouping Tags</h1>
+    </div>
+
+    <header>
+
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+        </section>
+
+        <section is="noticias">
+
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, doloribus laboriosam libero eos
+                    reprehenderit consequuntur quas officia assumenda, laudantium numquam deleniti. Consectetur cum fuga
+                    dolorum deserunt rerum consequuntur omnis harum.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae placeat assumenda esse ab eligendi
+                    neque fugiat mollitia facilis nulla numquam quod dolorum consequuntur dolores nostrum optio
+                    quisquam, commodi laborum labore.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por noctua7</p>
+    </footer>
+
+</body>
+
+</html>
