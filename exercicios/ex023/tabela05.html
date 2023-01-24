@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>ex023 - tabela05</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <meta name="description" content="sua descrição">
+    <meta name="autdor" content="noctuaCode">
+    <meta name="keywords" content="palavras chaves">
+    <link rel="shortcut icon" href="../../img/noctua7-64.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            border-color: white;
+        }
+
+        col.cnome {
+            background-color: rgb(118, 228, 228);
+            color: white;
+        }
+
+        col.cgrupo {
+            background-color: rgb(174, 204, 175);
+        }
+
+        tr:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="noctua">
+            <img src="../../img/noctua7-64.png" alt="icon-noctua7">
+        </div>
+        <h1>Tabelas Grandes</h1>
+    </div>
+
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastros</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+</body>
+
+</html>
