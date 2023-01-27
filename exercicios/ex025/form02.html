@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>ex025 - form02</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sua descrição">
+    <meta name="author" content="noctuaCode">
+    <meta name="keywords" content="palavras chaves">
+    <link rel="shortcut icon" href="../../img/noctua7-64.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="noctua">
+            <img src="../../img/noctua7-64.png" alt="icon-noctua7">
+        </div>
+        <h1>Formulários</h1>
+    </div>
+
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="10" size="20" placeholder="Senha (min 8 caracteres)" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
