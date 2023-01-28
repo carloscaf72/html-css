@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>ex025 - form05</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sua descrição">
+    <meta name="author" content="noctuaCode">
+    <meta name="keywords" content="palavras chaves">
+    <link rel="shortcut icon" href="../../img/noctua7-64.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        label {
+            display: inline-block;
+            width: 50px;
+            font-size: 13px;
+        }
+
+        .esportes {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="noctua">
+            <img src="../../img/noctua7-64.png" alt="icon-noctua7">
+        </div>
+        <h1>Formulários</h1>
+    </div>
+
+    <h1>Exemplos de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo:</legend>
+            <p class="esportes">
+                <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas">Masculino</label>
+            </p>
+            <p class="esportes">
+                <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+            </p>
+
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Esportes Favoritos:</legend>
+            <p class="esportes">
+                <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label>
+            </p>
+            <p class="esportes">
+                <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label>
+            </p>
+            <p class="esportes"><input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label></p>
+            <p class="esportes"><input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label></p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
