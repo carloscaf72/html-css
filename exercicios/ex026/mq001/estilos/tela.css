@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Estilo para tela */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(158, 158, 158);
+    border-radius: 5px;
+}
+
+header>h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+menu ul {
+    list-style: none;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+menu li {
+    display: inline-block;
+    padding: 5px;
+    margin: 8px 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+menu li:hover {
+    background-color: rgb(10, 122, 122);
+}
+
+article {
+    display: block;
+    width: 600px;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+article>h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+article>p {
+    text-indent: 30px;
+    text-align: justify;
+}
