@@ -2,3 +2,7 @@
 
 /* Orientação paisagem */
 
+body {
+    background-image: url('../img/cev-landscape.jpg');
+    background-position: bottom left;
+}
