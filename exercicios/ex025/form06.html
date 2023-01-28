@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>ex025 - form06</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sua descrição">
+    <meta name="author" content="noctuaCode">
+    <meta name="keywords" content="palavras chaves">
+    <link rel="shortcut icon" href="../../img/noctua7-64.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        label {
+            display: inline-block;
+            width: 120px;
+            font-size: 13px;
+        }
+
+        .esportes {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="noctua">
+            <img src="../../img/noctua7-64.png" alt="icon-noctua7">
+        </div>
+        <h1>Formulários</h1>
+    </div>
+
+    <h1>Exemplos de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p class="esportes">
+
+            <label for="icor">Cores:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p class="esportes">
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+        </p>
+
+        <p class="esportes">
+            <label for="ifoto">Foto do Perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <!-- Envio de arquivos somente com o método (method) POST -->
+
+        <p class="esportes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
