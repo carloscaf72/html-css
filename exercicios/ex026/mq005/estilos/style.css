@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: gray;
 }
 
 header>h1 {
@@ -49,14 +49,15 @@ menu>ul>li>a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(87, 87, 87);
-    color: white;
+    background-color: black;
+    color: rgb(65, 236, 65);
     text-align: center;
     border-top: 2px solid rgb(124, 116, 116);
 }
 
 menu>ul>li>a:hover {
     background-color: rgb(128, 68, 68);
+    color: white;
 }
 
 main {
