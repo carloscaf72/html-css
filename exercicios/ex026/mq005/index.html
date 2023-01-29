@@ -12,15 +12,15 @@
     <meta name="keywords" content="palavras chaves">
     <link rel="shortcut icon" href="../imagens/noctua7-64.png" type="image/png">
     <!-- Chamadas de Media Queries -->
-    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Noctua7 </h1>
-        <div id="img-menu">
-            <img id="icon-menu" src="./img/list-alt.svg" alt="icon-menu" onclick="clickMenu()">
+        <div id="img-menu" onclick="clickMenu()">
+            <img id="icon-menu" src="./img/list-alt.svg" alt="icon-menu">
         </div>
         <menu id="menuItens">
             <ul>
@@ -34,7 +34,7 @@
     </header>
     <main>
         <article>
-            <h2>Testando Media Query</h2>
+            <h2>Testando </h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quia non rerum itaque alias earum ab
                 voluptatibus facilis est laudantium, iure officiis quam sequi neque illum! Optio dolor saepe laudantium.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellendus vitae doloribus qui tenetur
@@ -61,12 +61,23 @@
     </main>
 
     <script>
+        let d = 'none';
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menuItens.style.display = 'block'
+            } else {
+                menuItens.style.display = d;
+            }
+        }
+
         function clickMenu() {
             if (menuItens.style.display == 'block') {
                 menuItens.style.display = 'none';
+                d = 'none';
             }
             else {
                 menuItens.style.display = 'block';
+                d = 'block'
             }
         }
     </script>
