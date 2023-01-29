@@ -61,10 +61,17 @@
     </main>
 
     <script>
-        let d = 'none';
+
+        if (innerWidth >= 768) {
+            menuItens.style.display = 'block';
+        } else {
+            menuItens.style.display = 'none';
+        }
+        let d = null;
+
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
-                menuItens.style.display = 'block'
+                menuItens.style.display = 'block';
             } else {
                 menuItens.style.display = d;
             }
@@ -77,7 +84,7 @@
             }
             else {
                 menuItens.style.display = 'block';
-                d = 'block'
+                d = 'block';
             }
         }
     </script>
