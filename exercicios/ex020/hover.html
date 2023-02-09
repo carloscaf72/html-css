@@ -13,11 +13,11 @@
     <link rel="shortcut icon" href="../../img/noctua7-64.png" type="image/png">
     <link rel="stylesheet" href="../../css/style.css">
     <style>
-        div>p {
+        div.conteudo>p {
             display: none;
         }
 
-        div:hover>p {
+        div.conteudo:hover>p {
             display: block;
             color: white;
             background-color: red;
@@ -38,13 +38,16 @@
         <h1>Exemplo de Hover</h1>
     </div>
 
-    <p>Passe o mouse sobre o texto abaixo</p>
-    <div class="content">
-        Passe o mouse aqui
-        <p>TEXTO ESCONDIDO...</p>
-    </div>
-    <P>Fim do Exemplo</P>
+    <div id="content">
 
+        <p>Passe o mouse sobre o texto abaixo</p>
+        <div class="conteudo">
+            Passe o mouse aqui
+            <p>TEXTO ESCONDIDO...</p>
+        </div>
+        <P>Fim do Exemplo</P>
+
+    </div>
 
 </body>
 

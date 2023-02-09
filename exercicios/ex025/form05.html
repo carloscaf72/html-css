@@ -33,40 +33,46 @@
         <h1>Formulários</h1>
     </div>
 
-    <h1>Exemplos de Formulário</h1>
+    <div id="content">
 
-    <form action="cadastro.php" method="get" autocomplete="on">
+        <h1>Exemplos de Formulário</h1>
 
-        <fieldset>
-            <legend>Sexo:</legend>
-            <p class="esportes">
-                <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas">Masculino</label>
+        <form action="cadastro.php" method="get" autocomplete="on">
+
+            <fieldset>
+                <legend>Sexo:</legend>
+                <p class="esportes">
+                    <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas">Masculino</label>
+                </p>
+                <p class="esportes">
+                    <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+                </p>
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Esportes Favoritos:</legend>
+                <p class="esportes">
+                    <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label>
+                </p>
+                <p class="esportes">
+                    <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label>
+                </p>
+                <p class="esportes"><input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+                </p>
+                <p class="esportes"><input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
             </p>
-            <p class="esportes">
-                <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
-            </p>
 
+        </form>
 
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Esportes Favoritos:</legend>
-            <p class="esportes">
-                <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label>
-            </p>
-            <p class="esportes">
-                <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label>
-            </p>
-            <p class="esportes"><input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label></p>
-            <p class="esportes"><input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label></p>
-        </fieldset>
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-
-    </form>
+    </div>
 
 </body>
 

@@ -29,63 +29,67 @@
         <h1>Formulários</h1>
     </div>
 
-    <h1>Exemplos de Formulário</h1>
+    <div id="content">
 
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Dados de Contato:</legend>
-            <p>
-                <label for="iemail">Email:</label>
-                <input type="email" name="email" id="iemail" required placeholder="coloque seu e-mail"
-                    autocomplete="email" size="40" maxlength="50">
-            </p>
-            <p>
-                <label for="itelf">Telefone Fixo:</label>
-                <input type="tel" name="telf" id="itelf" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$"
-                    placeholder="0000-0000">
-            </p>
-            <p>
-                <label for="itelc">Telefone Celular:</label>
-                <input type="tel" name="telc" id="itelc" autocomplete="tel" required pattern="^\d{5}-\d{4}$"
-                    placeholder="00000-0000">
-            </p>
-            <p>
-                <label for="iteld">Telefone Celular (DDD):</label>
-                <input type="tel" name="teld" id="iteld" autocomplete="tel" required pattern="^\(\d{2}\)\d{5}-\d{4}$"
-                    placeholder="(00)00000-0000">
-            </p>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Dados Pessoais:</legend>
+        <h1>Exemplos de Formulário</h1>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados de Contato:</legend>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="coloque seu e-mail"
+                        autocomplete="email" size="40" maxlength="50">
+                </p>
+                <p>
+                    <label for="itelf">Telefone Fixo:</label>
+                    <input type="tel" name="telf" id="itelf" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$"
+                        placeholder="0000-0000">
+                </p>
+                <p>
+                    <label for="itelc">Telefone Celular:</label>
+                    <input type="tel" name="telc" id="itelc" autocomplete="tel" required pattern="^\d{5}-\d{4}$"
+                        placeholder="00000-0000">
+                </p>
+                <p>
+                    <label for="iteld">Telefone Celular (DDD):</label>
+                    <input type="tel" name="teld" id="iteld" autocomplete="tel" required
+                        pattern="^\(\d{2}\)\d{5}-\d{4}$" placeholder="(00)00000-0000">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" maxlength="50" required autocomplete="name" size="80"
+                        placeholder="Nome Completo">
+                </p>
+
+                <p>
+                    <label for="iend">Endereço:</label>
+                    <input type="text" name="end" id="iend" maxlength="80" autocomplete="address-level4" size="80">
+                </p>
+
+                <p>
+                    <label for="ibairro">Bairro:</label>
+                    <input type="text" name="bairro" id="ibairro" size="30">
+                    <label for="icidade">Cidade:</label>
+                    <input type="text" name="cidade" id="icidade" size="23">
+                </p>
+            </fieldset>
+
+            <!-- Estudar sobre RegEx (Expressões Regulares) -->
 
             <p>
-                <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" maxlength="50" required autocomplete="name" size="80"
-                    placeholder="Nome Completo">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
             </p>
 
-            <p>
-                <label for="iend">Endereço:</label>
-                <input type="text" name="end" id="iend" maxlength="80" autocomplete="address-level4" size="80">
-            </p>
+        </form>
 
-            <p>
-                <label for="ibairro">Bairro:</label>
-                <input type="text" name="bairro" id="ibairro" size="30">
-                <label for="icidade">Cidade:</label>
-                <input type="text" name="cidade" id="icidade" size="23">
-            </p>
-        </fieldset>
-
-        <!-- Estudar sobre RegEx (Expressões Regulares) -->
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-
-    </form>
+    </div>
 
 </body>
 

@@ -20,15 +20,13 @@
 
 body {
     font-family: var(--fonte-padrao);
-    margin: 0;
-    padding: 80px 20px;
+    margin: 0px;
+    padding: 0px;
 }
 
-.head {
-    position: fixed;
+div.head {
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     height: 55px;
     background-color: var(--cor3);
     border-bottom: 3px solid var(--cor5);
@@ -36,11 +34,15 @@ body {
     padding: 5px 10px;
 }
 
-.head img {
-    height: 45px;
+div.head>h1 {
+    font-family: var(--fonte-indieFlower);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin: 8px auto;
 }
 
-.noctua {
+div.noctua {
     height: 55px;
     width: 55px;
     border-radius: 50%;
@@ -51,12 +53,12 @@ body {
     box-sizing: border-box;
 }
 
-.head>h1 {
-    font-family: var(--fonte-indieFlower);
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    margin: 8px auto;
+div.noctua img {
+    height: 45px;
+}
+
+div#content {
+    margin: 5px 10px;
 }
 
 .cor1 {
@@ -92,12 +94,14 @@ a:hover {
     color: var(--cor1);
     background-color: var(--cor5);
     padding: 2px 5px;
+    border-radius: 8px;
 }
 
 .subtitulo {
     color: var(--cor4);
     background-color: var(--cor1);
     padding: 2px 5px;
+    border-radius: 8px;
 }
 
 p {
@@ -110,7 +114,7 @@ p {
     box-shadow: 5px 5px 15px rgba(38, 26, 11, 0.400);
     width: 70%;
     padding: 10px;
-    margin: auto;
+    margin: 8px auto;
 }
 
 /* table {

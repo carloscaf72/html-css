@@ -34,57 +34,61 @@
         <h1>Formulários</h1>
     </div>
 
-    <h1>Exemplos de Formulário</h1>
+    <div id="content">
 
-    <form action="cadastro.php" method="post" autocomplete="on">
+        <h1>Exemplos de Formulário</h1>
 
-        <p>
+        <form action="cadastro.php" method="post" autocomplete="on">
 
-            <label for="iest">Cores:</label>
-            <select name="est" id="iest">
+            <p>
 
-                <option value="" selected> --- Escolha o Estado ---</option>
-                <optgroup label="Região Sudeste">
-                    <option value="MG">Minas Gerais</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
-                </optgroup>
+                <label for="iest">Cores:</label>
+                <select name="est" id="iest">
 
-                <optgroup label="Região Nordeste">
-                    <option value="MA">Maranhão</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                </optgroup>
+                    <option value="" selected> --- Escolha o Estado ---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
 
-            </select>
-        </p>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
 
-        <p>
-            <label for="iprof">Profissão:</label>
-            <input type="text" name="prof" id="iprof" list="lstprof">
-            <datalist id="lstprof">
-                <option value="Administrador"></option>
-                <option value="Contabilista"></option>
-                <option value="Desenvolvedor"></option>
-                <option value="Professor"></option>
-            </datalist>
-        </p>
+                </select>
+            </p>
 
-        <p>
-            <label for="imsg">Mensagem: (255 caracteres)</label> <br>
-            <textarea name="msg" id="imsg" cols="60" rows="20" placeholder=" sua mensagem aqui..."
-                maxlength="255"></textarea>
-        </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="Administrador"></option>
+                    <option value="Contabilista"></option>
+                    <option value="Desenvolvedor"></option>
+                    <option value="Professor"></option>
+                </datalist>
+            </p>
 
-        <!-- textarea deve ser com o método (method) POST -->
-        <!-- textarea - style="resize:none" - usuário não consegue mudar o tamanho do elemento -->
+            <p>
+                <label for="imsg">Mensagem: (255 caracteres)</label> <br>
+                <textarea name="msg" id="imsg" cols="60" rows="20" placeholder=" sua mensagem aqui..."
+                    maxlength="255"></textarea>
+            </p>
 
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+            <!-- textarea deve ser com o método (method) POST -->
+            <!-- textarea - style="resize:none" - usuário não consegue mudar o tamanho do elemento -->
 
-    </form>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+
+    </div>
 
 </body>
 

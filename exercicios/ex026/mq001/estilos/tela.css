@@ -43,7 +43,7 @@ menu li:hover {
 
 article {
     display: block;
-    width: 600px;
+    max-width: 600px;
     margin: auto;
     line-height: 1.5em;
 }

@@ -4,9 +4,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.content {
+.conteudo {
     display: inline-block;
     background-color: lightgray;
+
     text-align: center;
     height: 110px;
     width: 110px;
@@ -17,20 +18,25 @@ body {
 
 .q1:hover {
     background-color: #0ACDD2;
+    color: white;
 }
 
 .q2:hover {
     background-color: #09B2B8;
+    color: white;
 }
 
 .q3:hover {
     background-color: #078085;
+    color: white;
 }
 
 .q4:hover {
     background-color: #246466;
+    color: white;
 }
 
 .q5:hover {
     background-color: #033638;
+    color: white;
 }
